@@ -1,5 +1,7 @@
 import unittest
 from custom_functions import temperature_methods
+from custom_functions.temperature_methods import suma2
+
 
 class TestCollectionMethods(unittest.TestCase):
 
@@ -9,6 +11,27 @@ class TestCollectionMethods(unittest.TestCase):
         result1 = temperature_methods.suma(lista)
 
         self.assertEqual(result1, 3.5)
+
+    def test_suma2(self):
+
+        lista11 = [1, 2, 3, 4]
+        reult111 = temperature_methods.suma2(lista11)
+
+        self.assertEqual(reult111, 10)
+
+    #promedio solo para la suma de 3 listas de 12 elementos especificamente
+    def test_promedion2(self):
+
+        a1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        b1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        c1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+        a = suma2(a1)
+        b = suma2(b1)
+        c = suma2(c1)
+        result222 = temperature_methods.promedion2(a,b,c)
+
+        self.assertEqual(result222, 6.5)
+
 
     def test_promedion(self):
 

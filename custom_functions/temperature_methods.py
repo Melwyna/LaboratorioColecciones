@@ -4,12 +4,22 @@ def suma(a):
  sum=0
  for item in a:
   sum=sum+item
-  prome=sum/len(a)
+ prome=sum/len(a)
  return prome
 
 #Promedio nacional y temperatura promedio de los meses más calientes de los 3 departamentos
+def suma2(a):
+
+ sum=0
+ for item in a:
+  sum=sum+item
+ return sum
+
+def promedion2(a,b,c):
+ ter2=(a+b+c)/36
+ return ter2
+
 def promedion(a,b,c):
- ter=0
  ter=(a+b+c)/3
  return ter
 

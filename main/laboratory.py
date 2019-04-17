@@ -9,6 +9,9 @@ from custom_functions.temperature_methods import masc
 from custom_functions.temperature_methods import prommcali2
 from custom_functions.temperature_methods import prommcali3
 from custom_functions.temperature_methods import varianza
+from custom_functions.temperature_methods import suma2
+from custom_functions.temperature_methods import promedion2
+
 try:
 
  print("Digite las temperaturas del departamento de Santander", '\n')
@@ -25,7 +28,7 @@ try:
  mesc1= masc(santander)
  mescl1= maso(santander)
  print("El mes mas caliente de Santander es:", mescl1, "-->", mesc1)
-
+ s1=suma2(santander)
 
  print('\n')
  print("Digite las temperaturas del departamento de Guajira", '\n')
@@ -40,6 +43,7 @@ try:
  mesc2= masc(guajira)
  mesc22= maso(guajira)
  print("El mes mas caliente de Guajira es:", mesc22, "-->", mesc2)
+ s2 = suma2(guajira)
 
  print('\n')
  print("Digite las temperaturas del departamento de Nariño", '\n')
@@ -54,10 +58,11 @@ try:
  mesc3= masc(narino)
  mesc33= maso(narino)
  print("El mes mas caliente de Nariño es:", mesc33, "-->", mesc3)
-
+ s3 = suma2(narino)
 
  print('\n')
- promn=promedion(t1,t2,t3)
+
+ promn=promedion2(s1,s2,s3)
  print("La temperatura nacional es de:", promn)
 
  print('\n')
